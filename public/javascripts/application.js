@@ -12,8 +12,7 @@ $(document).ready(function(){
       console.log(itemsArr[0].fields.item_id)
       var items = [];
       for(var i = 0; i < itemsArr.length; i++){
-        items.push(itemsArr[i].fields.item_id)  // THIS IS WHERE YOU CAN PULL PARAMATERS FROM OBJECT
-        $.getJSON();
+        items.push(itemsArr[i].fields.item_id);
       }
       return items;
     }).then(function(items){
