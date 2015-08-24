@@ -5,10 +5,11 @@ var bodyParser = require("body-parser");
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use("/", express.static(path.join(__dirname + "/app/assets")))
+app.use("/public", express.static(path.join(__dirname + "/public")));
+app.set("view engine", "hbs");
 
-app.get("/", function(request, response){
-  response.sendFile(__dirname + "/public/views/index.html");
+app.get("/", function(req, res){
+  res.render("index", {})
 });
 
 app.listen(process.env.PORT || 3000, function(){
