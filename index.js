@@ -5,7 +5,8 @@ var bodyParser = require("body-parser");
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use("/", express.static(path.join(__dirname + "/app/assets")))
+app.use("/", express.static(path.join(__dirname + "/app/assets")));
+app.set("view engine", "hbs");
 
 app.get("/", function(request, response){
   response.sendFile(__dirname + "/app/views/index.html");
