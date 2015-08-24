@@ -1,0 +1,2 @@
+var Meal = function(info){
+};
