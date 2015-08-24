@@ -8,3 +8,8 @@ var Item = function(info){
   this.nf_serving_size_unit = info.nf_serving_size_unit;
 
 };
+
+Item.fetch = function(){
+  var 
+  var request = $.getJSON("")
+}
