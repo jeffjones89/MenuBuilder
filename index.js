@@ -8,7 +8,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use("/", express.static(path.join(__dirname + "/app/assets")))
 
 app.get("/", function(request, response){
-  response.sendFile(__dirname + "/app/views/index.html");
+  response.sendFile(__dirname + "/public/views/index.html");
 });
 
 app.listen(process.env.PORT || 3000, function(){
