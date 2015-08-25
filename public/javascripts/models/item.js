@@ -6,6 +6,7 @@ var Item = function(info){
   this.total_fat = info.nf_total_fat;
   this.carbohydrates = info.nf_total_carbohydrate;
 };
+
 Item.fetch = function(){
   var submit = $('input[type=submit]');
   submit.on('click', function(){
@@ -22,7 +23,7 @@ Item.fetch = function(){
     return items;
   }).then(function(items){
     console.log(items);
-  });
+  })
   return request;
 });
 };
