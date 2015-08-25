@@ -1,5 +1,6 @@
 var Item = function(info){
   var self = this;
+  this.brand_name = info.brand_name;
   this.item_name = info.item_name;
   this.calories = info.nf_calories;
   this.protein = info.nf_protein;
