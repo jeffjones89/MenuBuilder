@@ -1,11 +1,13 @@
 var Item = function(info){
   var self = this;
+  this.brand_name = info.brand_name;
   this.item_name = info.item_name;
   this.calories = info.nf_calories;
   this.protein = info.nf_protein;
   this.total_fat = info.nf_total_fat;
   this.carbohydrates = info.nf_total_carbohydrate;
 };
+
 Item.fetch = function(){
   var submit = $('input[type=submit]');
   submit.on('click', function(){
@@ -22,7 +24,7 @@ Item.fetch = function(){
     return items;
   }).then(function(items){
     console.log(items);
-  });
+  })
   return request;
 });
 };
