@@ -9,7 +9,6 @@ var Item = function(info){
 };
 
 Item.fetch = function(){
-  var submit = $('input[type=submit]');
   var restaurant = $('#menu-search').val();
   var url = "https://api.nutritionix.com/v1_1/search/"+ restaurant +"?results=0%3A20&cal_min=450&cal_max=50000&fields=*&appId=32443fbb&appKey=37587913d9144f31f691efdf130a12ab"
   var request = $.getJSON(url).then(function(response){
