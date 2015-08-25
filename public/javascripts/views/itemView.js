@@ -4,6 +4,11 @@ var ItemView = (function(item){
 });
 
 ItemView.prototype = {
+  render: function(){
+    var self = this;
+    self.$el.html(self.itemTemplate(self.item));
+    $("#box-1").append(self.$el);
+  },
   itemTemplate: function(item){
     var html = $("<div>");
     html.append("<h4>" + item.calories + "</h4>");
