@@ -1,13 +1,28 @@
 var Item = function(info){
+  var self = this;
   this.item_name = info.item_name;
   this.nf_calories = info.nf_calories;
   this.nf_protein = info.nf_protein;
   this.nf_total_fat = info.nf_total_fat;
   this.nf_total_carbohydrate = info.nf_total_carbohydrate;
-  this.nf_serving_size_unit = info.nf_serving_size_unit;
 };
-
 Item.fetch = function(){
-  var
-  var request = $.getJSON("")
-}
+  var submit = $('input[type=submit]');
+  submit.on('click', function(){
+  event.preventDefault();
+  var restaurant = $('#menu-search');
+  var url = "https://api.nutritionix.com/v1_1/search/"+ restaurant.val() +"?results=0%3A20&cal_min=450&cal_max=50000&fields=*&appId=32443fbb&appKey=37587913d9144f31f691efdf130a12ab"
+  var request = $.getJSON(url).
+  then(function(response){
+    $('#menu-search').val('');
+    var itemsArr = response.hits;
+    var items = [];
+    for (var i = 0; i < itemsArr.length; i++){
+      items.push(new Item(itemsArr[i].fields))
+    }
+    return items;
+  }).then(function(items){
+    console.log(items);
+  });
+});
+};
