@@ -1,5 +1,7 @@
 body {
   font-family: arial, sans-serif;
+  margin: 0 auto;
+  text-align: center;
 }
 
 *, *:before, *:after {
@@ -8,4 +10,39 @@ body {
 
 li {
   list-style-type: none;
+}
+
+#nav, #search, {
+  margin: 0 auto;
+  text-align: center;
+}
+
+#search-results {
+  border: 3px solid orange;
+  margin: 0 auto;
+  text-align: center;
+  width: 600px;
+  height: 300px;
+}
+
+#menu {
+  border: 1px solid red;
+  width: 300px;
+  height: 100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#box1 {
+  border: 1px solid green;
+  width: 300px;
+  height: 300px;
+}
+
+#box2 {
+  border: 1px solid purple;
+  width: 300px;
+  height: 300px;
+  margin-left: 300px;
+  margin-top: -19px;
 }
