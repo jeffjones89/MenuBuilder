@@ -8,12 +8,12 @@ var mealView = {
   appendItem: function(item){
     $("#meal").append('<div class = mealItem id = ' + item.id + ">");
     var html = $('#'+ item.id);
-      html.append('<h5>' + item.itemName + '</h5>');
-      html.append("<h5>" + 'Brand Name: ' + item.brandName + "</h5>");
-      html.append("<h5>" + 'Calories: '+ item.calories + "</h5>");
-      html.append("<h5>" + 'Protein: ' + item.protein + "</h5>");
-      html.append("<h5>"+ 'Total Fat: ' + item.totalFat + "</h5>");
-      html.append("<h5>" + 'Carbs: '+  item.carbohydrates + "</h5>");
+      html.append("<h5 id='data'>" + item.itemName + "</h5>");
+      html.append("<h5 id='data'>" + 'Brand Name: ' + item.brandName + "</h5>");
+      html.append("<h5 id='data'>" + 'Calories: '+ item.calories + "</h5>");
+      html.append("<h5 id='data'>" + 'Protein: ' + item.protein + "</h5>");
+      html.append("<h5 id='data'>" + 'Total Fat: ' + item.totalFat + "</h5>");
+      html.append("<h5 id='data'>" + 'Carbs: '+  item.carbohydrates + "</h5>");
   },
   total: function(){
     this.clearTotal();
