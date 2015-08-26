@@ -11,8 +11,10 @@ MenuView.prototype = {
 
     var add = self.$el.find('.addItem');
     add.on('click', function(){
+      console.log(self);
       var itemObj = self.item;
       self.addToMeal(itemObj);
+      mealView.appendItem(itemObj);
     });
   },
   itemTemplate: function(item){
