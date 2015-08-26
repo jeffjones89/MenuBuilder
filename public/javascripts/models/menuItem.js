@@ -1,6 +1,7 @@
 var MenuItem = function(info){
   var self = this;
   this.meal = [];
+  this.id = info.item_id;
   this.brand_name = info.brand_name;
   this.item_name = info.item_name;
   this.calories = info.nf_calories;

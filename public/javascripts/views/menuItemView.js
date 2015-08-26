@@ -19,6 +19,7 @@ MenuView.prototype = {
     add.on('click', function(){
       var itemObj = self.item;
       self.addToMeal(itemObj);
+      getTotals();
     });
   },
   itemTemplate: function(item){
@@ -33,6 +34,8 @@ MenuView.prototype = {
     return(html);
   },
   addToMeal: function(item){
-    MenuView.addMeal(item);
+    // MenuView.addMeal(item)
+    console.log(this);
+    $('#menu').append(this.$el);
   }
 }
