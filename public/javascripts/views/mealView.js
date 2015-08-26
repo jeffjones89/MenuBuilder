@@ -18,11 +18,11 @@ var mealView = {
   total: function(){
     this.clearTotal();
     this.meal.forEach(function(item){
-      mealView.calories += Number(item.calories);
-      mealView.protein += Number(item.protein);
-      mealView.carbs += Number(item.carbohydrates);
-      mealView.fat += Number(item.totalFat);
-    })
+      this.calories += item.calories;
+      this.protein += item.protein;
+      this.carbs += item.carbohydrates;
+      this.fat += item.totalFat;
+    }.bind(this));
   },
   view: function(){
     $('#calories').html('Total Calories: ' + this.calories);
