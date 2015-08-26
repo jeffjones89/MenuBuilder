@@ -7,7 +7,7 @@ ItemView.prototype = {
   render: function(){
     var self = this;
     self.$el.html(self.itemTemplate(self.item));
-    $(".item").append(self.$el);
+    $(".items").append(self.$el);
   },
   itemTemplate: function(item){
     var html = $("<div class='item'>");
