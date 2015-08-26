@@ -1,14 +1,7 @@
-// var meal = [];
 var MenuView = (function(item){
   this.item = item;
   this.$el = $("<div class ='item'></div>")
 });
-
-MenuView.addMeal = function(item){
-  // meal.push(item);
-  var test = new mealView(item);
-  console.log(test);
-}
 
 MenuView.prototype = {
   render: function(){
@@ -20,7 +13,6 @@ MenuView.prototype = {
     add.on('click', function(){
       var itemObj = self.item;
       self.addToMeal(itemObj);
-      getTotals();
     });
   },
   itemTemplate: function(item){
@@ -35,8 +27,9 @@ MenuView.prototype = {
     return(html);
   },
   addToMeal: function(item){
-    // MenuView.addMeal(item)
-    console.log(this);
-    $('#menu').append(this.$el);
+    mealArr = mealView.meal;
+    mealArr.push(item);
+    console.log(mealArr);
+    return mealArr;
   }
 }
