@@ -38,14 +38,14 @@ li {
   border: 1px solid green;
   width: 300px;
   height: 300px;
-  margin: 0 auto;
-  text-align: center;
+  /*margin: 0 auto;
+  text-align: center;*/
 }
 
-#box2 {
+#total {
   border: 1px solid purple;
   width: 300px;
   height: 300px;
-  margin-left: 300px;
-  margin-top: -19px;
+  margin-left: 475px;
+  margin-top: -300px;
 }
