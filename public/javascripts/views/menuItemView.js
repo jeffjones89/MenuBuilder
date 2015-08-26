@@ -33,6 +33,6 @@ MenuView.prototype = {
     return(html);
   },
   addToMeal: function(item){
-    ItemView.addMeal(item);
+    MenuView.addMeal(item);
   }
 }
