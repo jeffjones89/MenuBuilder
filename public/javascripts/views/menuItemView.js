@@ -8,12 +8,13 @@ MenuView.prototype = {
     var self = this;
     self.$el.html(self.itemTemplate(self.item));
     $(".items").append(self.$el);
-
     var add = self.$el.find('.addItem');
+    
     add.on('click', function(){
       var itemObj = self.item;
       self.addToMeal(itemObj);
       mealView.appendItem(itemObj);
+      mealView.render();
     });
   },
   itemTemplate: function(item){
