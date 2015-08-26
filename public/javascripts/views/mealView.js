@@ -5,7 +5,7 @@ var MealView = function(meal){
 
 MealView.prototype = {
   render: function(){
-
+    
   },
   mealTemplate: function(item){
     var html = $("<div>");
