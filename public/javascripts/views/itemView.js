@@ -16,6 +16,12 @@ ItemView.prototype = {
     html.append("<h5>" + 'Protein: ' + item.protein + "</h5>");
     html.append("<h5>"+ 'Total Fat: ' + item.total_fat + "</h5>");
     html.append("<h5>" + 'Carbs: '+  item.carbohydrates + "</h5>");
+    html.append("<button id = 'add_to_meal' type = 'button'>Add to Meal</button>");
     return(html)
+  },
+  addToMeal: function(){
+    // var self = this;
+    //
+    // if()
   }
 }
