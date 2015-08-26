@@ -1,5 +1,4 @@
 var meal = [];
-
 var ItemView = (function(item){
   this.item = item;
   this.$el = $("<div class ='item'></div>")
@@ -33,6 +32,6 @@ ItemView.prototype = {
     return(html);
   },
   addToMeal: function(item){
-    ItemView.addMeal(item);;
+    ItemView.addMeal(item);
   }
 }
