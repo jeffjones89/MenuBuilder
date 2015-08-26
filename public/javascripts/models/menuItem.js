@@ -6,6 +6,6 @@ var MenuItem = function(info){
   this.itemName = info.item_name;
   this.calories = info.nf_calories;
   this.protein = info.nf_protein;
-  this.totalFat = info.nf_totalFat;
+  this.totalFat = info.nf_total_fat;
   this.carbohydrates = info.nf_total_carbohydrate;
 };

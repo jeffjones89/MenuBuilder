@@ -18,8 +18,8 @@ MenuView.prototype = {
   },
   itemTemplate: function(item){
     var html = $("<div>");
-    html.append("<h4>" + item.brandName + "</h4>")
-    html.append("<h6>" +  item.itemName + "</h6>");
+    html.append("<h4>" +  item.itemName + "</h6>");
+    html.append("<h5>" + 'Brand Name: ' + item.brandName + "</h5>");
     html.append("<h5>" + 'Calories: '+ item.calories + "</h5>");
     html.append("<h5>" + 'Protein: ' + item.protein + "</h5>");
     html.append("<h5>"+ 'Total Fat: ' + item.totalFat + "</h5>");
