@@ -1,12 +1,13 @@
-var meal = [];
+// var meal = [];
 var MenuView = (function(item){
   this.item = item;
   this.$el = $("<div class ='item'></div>")
 });
 
 MenuView.addMeal = function(item){
-  meal.push(item);
-  console.log(meal);
+  // meal.push(item);
+  var test = new mealView(item);
+  console.log(test);
 }
 
 MenuView.prototype = {
