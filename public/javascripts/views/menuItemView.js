@@ -13,8 +13,8 @@ MenuView.prototype = {
     add.on('click', function(){
       var itemObj = self.item;
       self.addToMeal(itemObj);
-      mealView.appendItem(itemObj);
-      mealView.render();
+      meal.appendItem(itemObj);
+      meal.render();
     });
   },
   itemTemplate: function(item){
@@ -29,9 +29,8 @@ MenuView.prototype = {
     return(html);
   },
   addToMeal: function(item){
-    mealArr = mealView.meal;
+    mealArr = meal.items;
     mealArr.push(item);
-    console.log(mealArr);
     return mealArr;
   }
 }
