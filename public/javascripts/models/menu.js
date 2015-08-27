@@ -17,12 +17,12 @@ fetch: function(){
   })
   return request;
 },
-  clearDivs: function(){
+  clearDiv: function(){
     $('#menu').html('Menu');
-    $('#meal').html('Meal');
   },
   reset: function(){
-    this.clearDivs();;
+    this.clearDiv();
+    meal.clearDiv();
     meal.clearItems();
     meal.render();
   }

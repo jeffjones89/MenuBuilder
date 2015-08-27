@@ -41,5 +41,8 @@ var meal = {
   },
   clearItems: function(){
     this.items = [];
+  },
+  clearDiv: function(){
+    $('#meal').html('Meal');
   }
 }
