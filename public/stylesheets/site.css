@@ -176,3 +176,5 @@ input[type="search"]:focus {
   .main    { order: 2; }
   .aside-2 { order: 3; }
   .footer  { order: 4; }
+
+}

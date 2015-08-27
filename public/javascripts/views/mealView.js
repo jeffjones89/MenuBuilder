@@ -7,12 +7,7 @@ var meal = {
   appendItem: function(item){
     $("#meal").append('<div class = item id = ' + item.id + ">"); //using item id to differentiate between meal item divs;
     var html = $('#'+ item.id);
-      html.append("<h5 class='data'>" + item.itemName + "</h5>");
-      html.append("<h5 class='data'>" + 'Brand Name: ' + item.brandName + "</h5>");
-      html.append("<h5 class='data'>" + 'Calories: '+ item.calories + "</h5>");
-      html.append("<h5 class='data'>" + 'Protein: ' + item.protein + "</h5>");
-      html.append("<h5 class='data'>" + 'Total Fat: ' + item.totalFat + "</h5>");
-      html.append("<h5 class='data'>" + 'Carbs: '+  item.carbohydrates + "</h5>");
+      html.append("<h5 class=data>" + item.itemName + "</h5>");
   },
   total: function(){
     this.clearTotal();
