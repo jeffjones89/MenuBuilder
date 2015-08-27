@@ -1,5 +1,5 @@
 var DB = require("./connection");
 
-DB.sequelize.sync({force: true}).then(function(){
+DB.db_connection.sync({force: true}).then(function(){
   process.exit();
 });
