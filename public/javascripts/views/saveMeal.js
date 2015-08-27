@@ -26,7 +26,11 @@ var saveMeal = {
       data: JSON.stringify(info),
       contentType: 'application/json'
     }).done(function(){
-      alert("Meal Saved!")
+      $('#flash').slideDown(function() {
+    setTimeout(function() {
+        $('#flash').slideUp();
+    }, 3000);
+});
     }).fail(function(){
       console.log("Ajax Unsuccessful");
     });
