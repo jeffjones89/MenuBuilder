@@ -1,3 +1,65 @@
+/*@font-face {
+  font-family: 'Transat Text Standard';
+  src: url('http://localhost:3000/public/fonts/transat_text.ttf') format('truetype');
+}*/
+
+@import url(https://fonts.googleapis.com/css?family=Nunito:400,300,700|Pontano+Sans);
+
+body {
+  /*padding: 2em;*/
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Pontano Sans', sans-serif;
+}
+
+#masthead {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+input[type="search"] {
+  padding: 10px;
+  text-align: center;
+  min-width: 250px;
+  width: 25%;
+  border: solid 1px #fff;
+  box-shadow: inset 1px 1px 2px 0 #707070;
+  transition: box-shadow 0.3s;
+}
+
+input[type="search"]:focus {
+  box-shadow: inset 1px 1px 2px 0 #c9c9c9;
+}
+/*.style-2 input[type="text"]:focus,
+.style-2 input[type="text"].focus {
+  border: solid 5px #969696;
+}*/
+
+.button1 {
+  min-width: 80px;
+  width: 10%;
+  height: 20%;
+  /*color: #6496c8;
+  background: rgba(0,0,0,0);
+  border: solid 3px #6496c8;*/
+  font-family: 'Pontano Sans', sans-serif;
+  font-size: .9em;
+  text-align: center;
+  font-weight: bold;
+  margin: 1%;
+  /*padding: 5px 15px;*/
+  /*outline: none;*/
+  color: #e7f3f2;
+  border: 1px solid #ab171e;
+	background-color: #ab171e;
+	border-radius: 3px;
+	background-image: -webkit-linear-gradient(#d62229, #ab171e);
+}
+.button1:hover {
+  border-color: #346392;
+  color: #346392;
+}
+
 /*body {
   font-family: arial, sans-serif;
   margin: 0 auto;
@@ -76,8 +138,17 @@ li {
 }
 
 .header {
-  margin-top: 1%;
-  background: gainsboro;
+  /*margin-top: 1%;
+  background: gainsboro;*/
+  height: 5%;
+  font-size: 1em;
+  color: #666666;
+  background: -webkit-linear-gradient(white 0%, white 55%, #e6e6e6 130%);
+  background: -o-linear-gradient(white 0%, white 55%, #e6e6e6 130%);
+  background: linear-gradient(white 0%, white 55%, #e6e6e6 130%);
+  moz-box-shadow: 0 0 5px #888;
+  -webkit-box-shadow: 0 0 5px#888;
+  box-shadow: 0 0 5px #888;
 }
 
 .footer {
@@ -90,7 +161,7 @@ li {
 }
 
 .aside-1 {
-  background: gold;
+  /*background: gold;*/
 }
 
 .aside-2 {
@@ -107,11 +178,4 @@ li {
   .main    { order: 2; }
   .aside-2 { order: 3; }
   .footer  { order: 4; }
-}
-
-body {
-  /*padding: 2em;*/
-  margin: 0 auto;
-  text-align: center;
-  font-family: arial, sans-serif;
 }
