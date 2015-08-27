@@ -20,11 +20,11 @@ MenuView.prototype = {
   itemTemplate: function(item){
     var html = $("<div>");
     html.append("<h4>" +  item.itemName + "</h4>");
-    html.append("<h5 id='data'>" + 'Brand Name: ' + item.brandName + "</h5>");
-    html.append("<h5 id='data'>" + 'Calories: '+ item.calories + "</h5>");
-    html.append("<h5 id='data'>" + 'Protein: ' + item.protein + "</h5>");
-    html.append("<h5 id='data'>"+ 'Total Fat: ' + item.totalFat + "</h5>");
-    html.append("<h5 id='data'>" + 'Carbs: '+  item.carbohydrates + "</h5>");
+    html.append("<h5 class='data'>" + 'Brand Name: ' + item.brandName + "</h5>");
+    html.append("<h5 class='data'>" + 'Calories: '+ item.calories + "</h5>");
+    html.append("<h5 class='data'>" + 'Protein: ' + item.protein + "</h5>");
+    html.append("<h5 class='data'>"+ 'Total Fat: ' + item.totalFat + "</h5>");
+    html.append("<h5 class='data'>" + 'Carbs: '+  item.carbohydrates + "</h5>");
     html.append("<button class = 'addItem' type = 'button'>Add to Meal</button>");
     return(html);
   },
