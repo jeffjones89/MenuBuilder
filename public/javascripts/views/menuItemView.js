@@ -38,11 +38,22 @@ MenuView.prototype = {
     return(html);
   },
   addToMeal: function(item){
+    var self = this;
+    var addItem = self.$el.find('.addItem');
     mealArr = meal.items;
     mealArr.push(item);
+    self.hideOneDiv();
+    addItem.on('click', function(){
+      hideOneDiv();
+    })
     return mealArr;
   },
   hideInfoDivs: function(){
     $('.itemInfo').hide();
+  },
+  hideOneDiv: function(){
+    var self = this;
+    var itemDiv = self.$el.find('.itemInfo');
+    itemDiv.fadeOut(400);
   }
 }
