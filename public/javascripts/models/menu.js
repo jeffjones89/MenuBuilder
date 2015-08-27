@@ -14,11 +14,11 @@ fetch: function(){
     return items;
   }).fail(function(response){
     console.log("js failed to load");
-  })
+  });
   return request;
 },
   clearDiv: function(){
-    $('#menu').html('');
+    $('#menu').html('<p id = "menuHeader"> Menu </p>');
   },
   reset: function(){
     this.clearDiv();
