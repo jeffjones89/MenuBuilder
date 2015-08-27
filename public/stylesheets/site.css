@@ -157,7 +157,7 @@ button:hover {
   /*margin: 0 auto;*/
   text-align: center;
   /*margin-left: 1px;*/
-  width: 33%;
+  width: 40%;
   height: 20%;
   float: left;
   overflow-y: scroll;
@@ -184,7 +184,7 @@ button:hover {
 
 #meal {
   /*border: 1px solid blue;*/
-  width: 33%;
+  width: 30%;
   height: 20%;
   float: left;
   margin-left: 6%;
@@ -192,19 +192,25 @@ button:hover {
 
 #total {
   /*border: 1px solid red;*/
-  width: 33%;
+  width: 30%;
   height: 20%;
   /*float: left;*/
   text-align: left;
   margin-left: 5%;
   padding: 2px;
-  background: white;
+  /*background: white;*/
   /*margin-right: 6%;*/
   max-width: 60%;
 }
 
-#menuHeader, #mealHeader {
+#total p, #mealName, #save-meal {
+  margin-left: 15%;
+}
+
+#menuHeader, #mealHeader, #totalHeader {
   text-align: center;
+  font-weight: bold;
+  font-size: 1.1em;
 }
 
 #flash{
