@@ -89,12 +89,18 @@ input[type="search"]:focus {
 
 
 #titles {
-  border: 1px solid green;
+  /*border: 1px solid green;*/
   text-align: center;
-  width: 95%;
+  width: 94%;
   height: 20%;
   margin: 0 auto;
   font-weight: bold;
+  list-style: none;
+  background-color: #e7f3f2;
+}
+
+.title li {
+
 }
 
 .main-content {

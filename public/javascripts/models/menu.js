@@ -18,7 +18,7 @@ fetch: function(){
   return request;
 },
   clearDiv: function(){
-    $('#menu').html('Menu');
+    $('#menu').html('');
   },
   reset: function(){
     this.clearDiv();
