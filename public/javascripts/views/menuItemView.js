@@ -10,9 +10,8 @@ MenuView.prototype = {
     $(".items").append(self.$el);
     var add = self.$el.find('.addItem');
     var show = self.$el.find('.itemName');
-
+    var toggleDiv = self.$el.find('.itemInfo');
     self.hideDivs();
-
     add.on('click', function(){
       var itemObj = self.item;
       self.addToMeal(itemObj);
@@ -21,7 +20,7 @@ MenuView.prototype = {
     });
 
     show.on('click', function(){
-      self.showDiv();
+      toggleDiv.slideToggle(400);
     })
   },
   itemTemplate: function(item){
@@ -42,10 +41,6 @@ MenuView.prototype = {
     mealArr = meal.items;
     mealArr.push(item);
     return mealArr;
-  },
-  showDiv: function(){
-    var self = this;
-    self.$el.find('.itemInfo').fadeIn(450);
   },
   hideDivs: function(){
     $('.itemInfo').hide();
