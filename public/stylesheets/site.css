@@ -115,3 +115,22 @@ body {
   text-align: center;
   font-family: arial, sans-serif;
 }
+
+h4 {
+  background: #34d95a;
+  background-image: -webkit-linear-gradient(top, #34d95a, #2bb8b1);
+  background-image: -moz-linear-gradient(top, #34d95a, #2bb8b1);
+  background-image: -ms-linear-gradient(top, #34d95a, #2bb8b1);
+  background-image: -o-linear-gradient(top, #34d95a, #2bb8b1);
+  background-image: linear-gradient(to bottom, #34d95a, #2bb8b1);
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  width: 33%;
+  margin: auto;
+}

@@ -8,9 +8,10 @@ MenuView.prototype = {
     var self = this;
     self.$el.html(self.itemTemplate(self.item));
     $(".items").append(self.$el);
+
     var add = self.$el.find('.addItem');
     var show = self.$el.find('.itemName');
-    var toggleDiv = self.$el.find('.itemInfo');
+    var toggleItemInfo = self.$el.find('.itemInfo');
     self.hideInfoDivs();
     add.on('click', function(){
       var itemObj = self.item;
@@ -20,7 +21,7 @@ MenuView.prototype = {
     });
 
     show.on('click', function(){
-      toggleDiv.slideToggle(400);
+      toggleItemInfo.slideToggle(400);
     })
   },
   itemTemplate: function(item){
