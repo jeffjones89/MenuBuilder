@@ -38,6 +38,6 @@ var meal = {
     this.items = [];
   },
   clearDiv: function(){
-    $('#meal').html('');
+    $('#meal').html('<p id = "mealHeader"> Meal </p>');
   }
 }
