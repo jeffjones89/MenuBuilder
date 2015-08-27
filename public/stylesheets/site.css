@@ -122,6 +122,7 @@ input[type="search"]:focus {
   border: 2px solid black;
   margin: 25px;
   float: left;
+  overflow: scroll;
 }
 
 .aside-2 {
