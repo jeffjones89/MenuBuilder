@@ -30,6 +30,11 @@ input[type="search"] {
 input[type="search"]:focus {
   box-shadow: inset 1px 1px 2px 0 #c9c9c9;
 }
+/*.style-2 input[type="text"]:focus,
+.style-2 input[type="text"].focus {
+  border: solid 5px #969696;
+}*/
+
 .button1 {
   min-width: 80px;
   width: 10%;
@@ -54,17 +59,64 @@ input[type="search"]:focus {
   opacity: .9;
 }
 
-#menu {
-  border-style: solid;
+/*body {
+  font-family: arial, sans-serif;
+  margin: 0 auto;
+  text-align: center;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}*/
+
+.data {
+  line-height: .1em;
+  /*text-align: center;
+  text-align: left;
+  margin-left: 10%;
+  font-weight: 200;*/
+}
+/*#nav, #search, {
+  margin: 0 auto;
+  text-align: center;
+}
+
+#search-results {
+  border: 3px solid orange;
+  margin: 0 auto;
+  text-align: center;
+  width: 600px;
   height: 300px;
+}*/
+
+/*#meal {
+  border: 1px solid red;
   width: 300px;
-  padding: 25px;
-  border: 2px solid black;
-  margin: 25px;
-  overflow: scroll;
+  height: 100px;
+  margin: 0 auto;
+  text-align: center;
+}*/
+
+#menu {
+  /*border: 1px solid green;*/
+  /*width: 300px;
+  height: 300px;*/
+  margin: 0 auto;
   text-align: center;
   max-height: 10%;
 }
+
+/*#total {
+  border: 1px solid purple;
+  width: 300px;
+  height: 300px;
+  margin-left: 600px;
+  margin-top: -300px;
+}*/
 
 .wrapper {
   display: -webkit-box;
@@ -97,32 +149,33 @@ input[type="search"]:focus {
   box-shadow: 0 0 5px #888;
 }
 
-.main-content {
-  width: 100%;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
-  border: 2px solid black;
+.footer {
+  background: lightgreen;
+}
+
+.main {
+  text-align: left;
+  border: 1px solid deepskyblue;
 }
 
 .aside-1 {
-  border-style: solid;
-  height: 300px;
-  width: 200px;
-  padding: 25px;
-  border: 2px solid black;
-  margin: 25px;
-  float: left;
+  border: 1px solid gold;
 }
 
 .aside-2 {
-  border-style: solid;
-  height: 300px;
-  width: 200px;
-  padding: 25px;
-  border: 2px solid black;
-  margin: 25px;
+  border: 1px solid hotpink;
+}
+
+@media all and (min-width: 600px) {
+  .aside { flex: 1 auto; }
+}
+
+@media all and (min-width: 800px) {
+  .main    { flex: 3 0px; }
+  .aside-1 { order: 1; }
+  .main    { order: 2; }
+  .aside-2 { order: 3; }
+  .footer  { order: 4; }
 }
 
 body {
