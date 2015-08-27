@@ -1,12 +1,11 @@
-var mealView = {
-  $el: $("#meal"),
-  meal: [],
+var meal = {
+  items: [],
   calories: 0,
   protein: 0,
   carbs: 0,
   fat: 0,
   appendItem: function(item){
-    $("#meal").append('<div class = mealItem id = ' + item.id + ">");
+    $("#meal").append('<div class = item id = ' + item.id + ">"); //using item id to differentiate between meal item divs;
     var html = $('#'+ item.id);
       html.append('<h5>' + item.itemName + '</h5>');
       html.append("<h5>" + 'Brand Name: ' + item.brandName + "</h5>");
@@ -17,7 +16,7 @@ var mealView = {
   },
   total: function(){
     this.clearTotal();
-    this.meal.forEach(function(item){
+    this.items.forEach(function(item){
       this.calories += item.calories;
       this.protein += item.protein;
       this.carbs += item.carbohydrates;
@@ -39,5 +38,8 @@ var mealView = {
     this.protein = 0;
     this.fat = 0;
     this.carbs = 0;
+  },
+  clearItems: function(){
+    this.items = [];
   }
 }

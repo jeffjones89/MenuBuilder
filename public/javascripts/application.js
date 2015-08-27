@@ -1,4 +1,4 @@
-$(document).ready(function(){;
+$(document).ready(function(){
   $('input[type=submit]').on('click', function(){
     event.preventDefault();
     Menu.fetch().then(function(items){
