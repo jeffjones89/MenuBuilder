@@ -2,13 +2,14 @@
 
 body {
   margin: 0 auto;
-  text-align: center;
+  /*text-align: center;*/
   font-family: 'Pontano Sans', sans-serif;
 }
 
 #masthead {
   font-size: 2.5em;
   font-weight: bold;
+  text-align: center;
   border-bottom: 2%;
   font-family: 'Pontano Sans', sans-serif;
 }
@@ -28,6 +29,7 @@ input[type="search"]:focus {
 }
 
 .button1, button {
+  text-align: center;
   min-width: 90px;
   width: 10%;
   height: 20%;
@@ -69,6 +71,7 @@ input[type="search"]:focus {
 }
 
 .header {
+  text-align: center;
   height: 5%;
   font-size: 1em;
   color: #666666;
@@ -80,8 +83,18 @@ input[type="search"]:focus {
   box-shadow: 0 0 5px #888;
 }
 
-.data {
+/*.data {
   line-height: .1em;
+}*/
+
+
+#titles {
+  border: 1px solid green;
+  text-align: center;
+  width: 95%;
+  height: 20%;
+  margin: 0 auto;
+  font-weight: bold;
 }
 
 .main-content {
@@ -124,8 +137,10 @@ input[type="search"]:focus {
 }
 
 #flash{
+  text-align: center;
   margin-bottom: 2%;
   font-size: .9em;
+
 }
 
 /*.footer {
