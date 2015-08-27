@@ -11,7 +11,7 @@ MenuView.prototype = {
     var add = self.$el.find('.addItem');
     var show = self.$el.find('.itemName');
     var toggleDiv = self.$el.find('.itemInfo');
-    self.hideDivs();
+    self.hideInfoDivs();
     add.on('click', function(){
       var itemObj = self.item;
       self.addToMeal(itemObj);
@@ -42,7 +42,7 @@ MenuView.prototype = {
     mealArr.push(item);
     return mealArr;
   },
-  hideDivs: function(){
+  hideInfoDivs: function(){
     $('.itemInfo').hide();
   }
 }
