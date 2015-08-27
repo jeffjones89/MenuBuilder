@@ -56,8 +56,7 @@ input[type="search"]:focus {
 	background-image: -webkit-linear-gradient(#d62229, #ab171e);
 }
 .button1:hover {
-  border-color: #346392;
-  color: #346392;
+  opacity: .9;
 }
 
 /*body {
@@ -108,6 +107,7 @@ li {
   height: 300px;*/
   margin: 0 auto;
   text-align: center;
+  max-height: 10%;
 }
 
 /*#total {
@@ -124,10 +124,8 @@ li {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-
   -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
-
   font-weight: bold;
   text-align: center;
 }
@@ -157,15 +155,15 @@ li {
 
 .main {
   text-align: left;
-  background: deepskyblue;
+  border: 1px solid deepskyblue;
 }
 
 .aside-1 {
-  /*background: gold;*/
+  border: 1px solid gold;
 }
 
 .aside-2 {
-  background: hotpink;
+  border: 1px solid hotpink;
 }
 
 @media all and (min-width: 600px) {
