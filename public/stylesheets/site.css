@@ -159,7 +159,18 @@ li {
 }
 
 .aside-1 {
+<<<<<<< HEAD
   border: 1px solid gold;
+=======
+  border-style: solid;
+  height: 300px;
+  width: 200px;
+  padding: 25px;
+  border: 2px solid black;
+  margin: 25px;
+  float: left;
+  overflow: scroll;
+>>>>>>> oojs_3
 }
 
 .aside-2 {
