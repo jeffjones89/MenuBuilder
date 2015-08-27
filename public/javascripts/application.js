@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  saveMeal.clickEvent();
+  saveMeal.save();
   $('input[type=submit]').on('click', function(){
     event.preventDefault();
     Menu.fetch().then(function(items){
