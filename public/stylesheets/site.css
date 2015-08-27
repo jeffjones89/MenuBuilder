@@ -12,7 +12,7 @@ li {
   list-style-type: none;
 }*/
 
-#data {
+.data {
   line-height: .1em;
   /*text-align: center;
   text-align: left;
@@ -76,6 +76,7 @@ li {
 }
 
 .header {
+  margin-top: 1%;
   background: gainsboro;
 }
 
@@ -109,7 +110,7 @@ li {
 }
 
 body {
-  padding: 2em;
+  /*padding: 2em;*/
   margin: 0 auto;
   text-align: center;
   font-family: arial, sans-serif;
