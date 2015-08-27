@@ -9,6 +9,8 @@ MenuView.prototype = {
     self.$el.html(self.itemTemplate(self.item));
     $(".items").append(self.$el);
     var add = self.$el.find('.addItem');
+    var show = self.$el.find('.itemName');
+
 
     add.on('click', function(){
       var itemObj = self.item;
