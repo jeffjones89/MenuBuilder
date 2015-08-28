@@ -1,0 +1,15 @@
+User Stories:
+
+(1) As a user, I want to build a meal online so that I can be informed about the meal's nutritional value before purchasing the meal.
+
+(2) As a user, I want menu item choices to appear on the page when I search for a restaurant or food item so that I can see a list of items to choose from when building a meal.
+
+(3) As a user, I want the contents of the last menu item chosen to be concealed so that I know I successfully added a menu item to my meal.
+
+(4) As a user, I want to see a list of menu items added to my meal so that I know which items are included in the total nutrition calculator.
+
+(5) As a user, I want to be able to save a meal so that I can view the meal's nutritional content at a later date.
+
+(6) As a user, I want to see visual confirmation that my meal has been saved so that I know my meal was saved successfully and can be retrieved at a later date.
+
+(7) As a user, I want to be able to create a meal on a mobile device so that I am not limited to creating a meal only on my desktop computer.
