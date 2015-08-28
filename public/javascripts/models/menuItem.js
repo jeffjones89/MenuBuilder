@@ -1,3 +1,4 @@
+//model for our front end item view, using the AJAX return objects to define our KVPS. The underscore notation is a nutritionix convention
 var MenuItem = function(info){
   var self = this;
   this.meal = [];

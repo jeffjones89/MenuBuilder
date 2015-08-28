@@ -1,4 +1,5 @@
 var saveMeal = {
+  //the create function packages the info object that we need to pass to the backend by taking a snapshot of the page.
   create: function(){
     var self = this;
     var info ={
@@ -11,6 +12,7 @@ var saveMeal = {
     self.save(info);
     $('#mealName').val('');
   },
+  // ajax call to the backend to save meals to the database, eventually want to add User ID to each meal/associate with user model
   save: function(info){
     var url = "/meals";
     var request = $.ajax({
@@ -21,13 +23,13 @@ var saveMeal = {
     }).done(function(){
       $('#flash').slideDown(function() {
     setTimeout(function() {
-        $('#flash').slideUp();
+        $('#flash').slideUp(); //flash message to confirm ajax success for the user. Hidden div shows up for 3 seconds.
     }, 3000);
 });
     }).fail(function(){
       console.log("Ajax Unsuccessful");
     });
-    return request
+    return request;
   },
   clear: function(){
 
