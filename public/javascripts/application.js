@@ -1,10 +1,20 @@
 $(document).ready(function(){
-  $('#save-meal').on('click', function(event){
+  var clear = $('#clear-meal');
+  var save = $('#save-meal')
+  var search = $('input[type=submit]');
+
+  clear.on('click', function(event){
+    meal.clearDiv();
+    meal.clearItems();
+    meal.render();
+  })
+
+  save.on('click', function(event){
     event.preventDefault();
     saveMeal.create();
   });
 
-  $('input[type=submit]').on('click', function(event){
+  search.on('click', function(event){
     event.preventDefault();
     Menu.fetch().then(function(items){
       items.forEach(function(item){
