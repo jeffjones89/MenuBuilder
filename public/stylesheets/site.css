@@ -3,9 +3,7 @@
 
 body {
   margin: 0 auto;
-  /*text-align: center;*/
   font-family: 'Pontano Sans', sans-serif;
-  /*background-image: url(../images/girl.jpg);*/
   color: #474747;
 }
 
@@ -74,6 +72,7 @@ button:hover {
 	border-radius: 3px;
 	background-image: -webkit-linear-gradient(#d62229, #ab171e);
 }
+
 .button1:hover {
   opacity: .8;
   cursor: pointer;
@@ -97,9 +96,7 @@ button:hover {
 }*/
 
 #main {
- /*background-image: url(../images/apple.jpg);*/
  background: url(../images/tea.jpg) no-repeat center center fixed;
- /*background-size: cover;*/
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
@@ -131,7 +128,6 @@ box-shadow: 0 0 5px #888;
 }
 
 .itemName {
-  /*background: white;*/
   padding: 3%;
   margin-right: 6%;
 }
@@ -142,10 +138,8 @@ box-shadow: 0 0 5px #888;
 }
 
 .data {
-  /*line-height: .1em;*/
   text-align: left;
   margin-left: 15%;
-  /*margin-bottom: 2%;*/
   padding: 1%;
   background: white;
   margin-right: 6%;
@@ -179,18 +173,12 @@ box-shadow: 0 0 5px #888;
   justify-content: center;
   align-items: baseline;
   background-color: #e7f3f2;
-  /*background-color: white;*/
   opacity: .9;
   padding: 2%;
 }
 
 #menu {
-  /*border: 1px solid orange;*/
-  /*width: 300px;
-  height: 300px;*/
-  /*margin: 0 auto;*/
   text-align: center;
-  /*margin-left: 1px;*/
   width: 40%;
   height: 20%;
   float: left;
@@ -198,11 +186,6 @@ box-shadow: 0 0 5px #888;
   max-height: 500px;
   cursor: pointer;
 }
-
-/*#menu :hover {
-  color: red;
-  cursor: pointer;
-}*/
 
 ::-webkit-scrollbar {
     width: 10px;
@@ -217,7 +200,6 @@ box-shadow: 0 0 5px #888;
 }
 
 #meal {
-  /*border: 1px solid blue;*/
   width: 30%;
   height: 20%;
   float: left;
@@ -270,7 +252,7 @@ box-shadow: 0 0 5px #888;
   display: none;
   text-align: center;
   font-size: .9em;
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
   color: #474747;
   /*color: #99141b;*/
