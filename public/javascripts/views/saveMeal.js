@@ -1,11 +1,4 @@
 var saveMeal = {
-  clickEvent: function(){
-    var self = this;
-      $('#save-meal').on('click', function(){
-        event.preventDefault();
-        self.create();
-      });
-    },
   create: function(){
     var self = this;
     var info ={
@@ -36,5 +29,7 @@ var saveMeal = {
     });
     return request
   },
-
+  clear: function(){
+    
+  }
 };
