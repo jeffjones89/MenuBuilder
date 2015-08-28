@@ -1,4 +1,5 @@
 var meal = {
+  //this object handles the meal view, which pulls data from the items array below, a collection of item objects
   items: [],
   calories: 0,
   protein: 0,

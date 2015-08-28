@@ -41,6 +41,7 @@ MenuView.prototype = {
     return(html);
   },
   addToMeal: function(item){
+    //this add meals to the Meal.Items array for the Meal View
     var self = this;
     var addItem = self.$el.find('.addItem');
     mealArr = meal.items;

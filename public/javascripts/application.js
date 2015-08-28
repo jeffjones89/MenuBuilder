@@ -1,4 +1,6 @@
 $(document).ready(function(){
+
+  //setting up click events on clear button, search and save. Search click event fires API call, and creates array of Items 
   var clear = $('#clear-meal');
   var save = $('#save-meal')
   var search = $('input[type=submit]');

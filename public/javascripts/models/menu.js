@@ -1,3 +1,4 @@
+//the Menu object handles the initial fetch and creation of items from the API, and the reset and clear functionality clears the page when another API request fires
 var Menu = {
 fetch: function(){
   this.reset();
