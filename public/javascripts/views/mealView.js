@@ -20,9 +20,9 @@ var meal = {
   },
   view: function(){
     $('#calories').html('Total Calories: ' + this.calories);
-    $('#protein').html('Total Protein: ' + this.protein);
-    $('#carbs').html('Total Carbs: ' + this.carbs);
-    $('#fat').html('Total Fat: ' + this.fat);
+    $('#protein').html('Total Protein: ' +  this.protein +'g');
+    $('#carbs').html('Total Carbs: ' + this.carbs +'g');
+    $('#fat').html('Total Fat: ' + this.fat +'g');
   },
   render: function(){
     this.total();
