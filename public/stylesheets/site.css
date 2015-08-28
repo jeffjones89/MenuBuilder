@@ -224,10 +224,9 @@ box-shadow: 0 0 5px #888;
   margin-left: 4%;
 }
 
-/*#clear-meal {
-  margin: 0 auto;
-  text-align: center;
-}*/
+#clear-meal {
+  margin-left: 33%;
+}
 
 #total {
   /*border: 1px solid red;*/
@@ -258,7 +257,7 @@ box-shadow: 0 0 5px #888;
 }
 
 #clear-meal {
-  
+
 }
 
 #menuHeader, #mealHeader, #totalHeader {
@@ -288,6 +287,10 @@ box-shadow: 0 0 5px #888;
 
   #save-meal {
     margin-left: 28%;
+  }
+
+  #clear-meal {
+    margin-left: 25%;
   }
 }
 
