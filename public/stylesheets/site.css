@@ -224,6 +224,10 @@ box-shadow: 0 0 5px #888;
   margin-left: 4%;
 }
 
+#clear-meal {
+  margin-left: 33%;
+}
+
 #total {
   /*border: 1px solid red;*/
   width: 30%;
@@ -252,6 +256,10 @@ box-shadow: 0 0 5px #888;
   margin-left: 35%;
 }
 
+#clear-meal {
+
+}
+
 #menuHeader, #mealHeader, #totalHeader {
   text-align: center;
   font-weight: bold;
@@ -275,8 +283,37 @@ box-shadow: 0 0 5px #888;
   opacity: .8;
 }
 
-/*for mobile:
--webkit-flex-flow: row wrap;
--moz-flex-flow: row wrap;
--ms-flex-flow: row wrap;
-flex-flow: row wrap;*/
+@media (max-width: 850px) {
+
+  #mealName {
+    margin-left: 15%;
+  }
+
+  #save-meal {
+    margin-left: 28%;
+  }
+
+  #clear-meal {
+    margin-left: 25%;
+  }
+}
+
+@media (max-width: 750px) {
+
+
+
+  /*#total {
+    -webkit-flex-flow: row wrap;
+    -moz-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+  }*/
+
+  /*#mealName {
+    margin-left: 15%;
+  }
+
+  #save-meal {
+    margin-left: 28%;
+  }*/
+}
