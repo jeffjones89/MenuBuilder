@@ -12,7 +12,7 @@ var saveMeal = {
     $('#mealName').val('');
   },
   save: function(info){
-    var url = "http://localhost:3000/meals";
+    var url = "/meals";
     var request = $.ajax({
       url: url,
       method: "post",
@@ -30,6 +30,6 @@ var saveMeal = {
     return request
   },
   clear: function(){
-    
+
   }
 };
