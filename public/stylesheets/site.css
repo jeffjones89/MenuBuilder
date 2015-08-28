@@ -187,10 +187,7 @@ button:hover {
   width: 30%;
   height: 20%;
   float: left;
-  margin-left: 6%;
-  overflow-y: scroll;
-  max-height: 500px;
-  cursor: pointer;
+  margin-left: 4%;
 }
 
 #total {
@@ -206,24 +203,8 @@ button:hover {
   max-width: 60%;
 }
 
-<<<<<<< HEAD
-.aside-1 {
-<<<<<<< HEAD
-  border: 1px solid gold;
-=======
-  border-style: solid;
-  height: 300px;
-  width: 200px;
-  padding: 25px;
-  border: 2px solid black;
-  margin: 25px;
-  float: left;
-  overflow: scroll;
->>>>>>> oojs_3
-=======
 #total p, #mealName, #save-meal {
   margin-left: 15%;
->>>>>>> e0a75fc95be1e5836a630c7f01f821497f043dfb
 }
 
 #menuHeader, #mealHeader, #totalHeader {
