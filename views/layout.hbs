@@ -22,38 +22,42 @@
 
     <div id="wrapper">
       <div id="nav" class="header"><br>
-        <div id="masthead">Menu Builder</div><br>
+        <div id="masthead">My Menu Builder</div><br>
+        </div><br>
           <div id="search-bar">
             <form id="search">
-                <input type="search" placeholder="Enter a Restaurant Name or Menu Item" id="menu-search"><br><br>
+                <input type="search" placeholder="Enter Restaurant Name or Menu Item" id="menu-search">
                 <input type="submit" class="button1" value="Search"><br>
             </form><br>
           </div>
-      </div><br>
-        <div id="flash">Your Meal Has Been Saved!</div>
-          <!-- <div id="titles">
-            <li class="title">Menu</li>
-            <li class="title">Meal</li>
-            <li class="title">Total</li>
-          </div> -->
-        <div class="main-content">
-            <div id="menu" class="items main">
-              <p id = "menuHeader"> Menu </p>
-            </div>
-            <div id="meal" class="aside-1">
-              <p id = "mealHeader"> Meal </p>
-            </div>
-            <div id="total" class="aside-2">
-              <div id="totalHeader">Totals</div>
-              <p id = "calories"> Total Calories: 0 </p>
-              <p id = "protein"> Total Protein: 0</p>
-              <p id = "carbs"> Total Carbs: 0</p>
-              <p id = "fat"> Total Fat: 0</p>
-            <input type="input" placeholder="Enter Meal Name" id="mealName"><br><br>
-            <button id="save-meal">Save</button>
-           </div><br>
-          <!-- <footer class="footer">Footer</footer> -->
-        </div><br>
+
+        <div id="main">
+          <div id="flash">Your Meal Has Been Saved!</div>
+            <!-- <div id="titles">
+              <li class="title">Menu</li>
+              <li class="title">Meal</li>
+              <li class="title">Total</li>
+            </div> -->
+          <div class="main-content">
+              <div id="menu" class="items main">
+                <p id = "menuHeader"> Menu </p>
+                <div id="scrollbar"></div>
+              </div>
+              <div id="meal" class="aside-1">
+                <p id = "mealHeader"> Meal </p>
+              </div>
+              <div id="total" class="aside-2">
+                <div id="totalHeader">Totals</div>
+                <p id = "calories"> Total Calories: 0 </p>
+                <p id = "protein"> Total Protein: 0</p>
+                <p id = "carbs"> Total Carbs: 0</p>
+                <p id = "fat"> Total Fat Grams: 0</p>
+              <input type="input" placeholder="Enter Meal Name" id="mealName"><br><br>
+              <button id="save-meal">Save</button>
+             </div><br>
+            <!-- <footer class="footer">Footer</footer> -->
+          </div><br>
+        </div>
     </div>
 
     {{{ body }}}
