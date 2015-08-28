@@ -1,7 +1,7 @@
 # MenuBuilder
 WDI 6 Group Project
 
-Welcome to Menu Builder, a Node application running on the Express framework, built by Kristin Greenslit, Cheik Ndiongue, Ryan Kahle, Cameron Fry and Jeff Jones.
+Welcome to Menu Builder, a Node application running on the Express framework, built by Kristin Greenslit, Cheikh Ndiongue, Ryan Kahle, Cameron Fry and Jeff Jones.
 
 This was the third project in General Assembly's Web Development Immersive 6 located in Washington, DC. The app uses the free Nutritionix API to query the user's search input and return items that match the search results. The user can then add individual menu items to their meals and see the total nutritional value in the calculator on the right hand side of the screen.
 
@@ -18,4 +18,4 @@ LOCAL INSTALLATION INSTRUCTIONS:
 * node config/migrate.js
 * nodemon
 
-App will listen on port 3000. 
+App will listen on port 3000.
