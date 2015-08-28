@@ -34,9 +34,9 @@ MenuView.prototype = {
     var itemInfo = html.find(".itemInfo");
       itemInfo.append("<h5 class='data'>" + 'Brand Name: ' + item.brandName + "</h5>");
       itemInfo.append("<h5 class='data'>" + 'Calories: '+ item.calories + "</h5>");
-      itemInfo.append("<h5 class='data'>" + 'Protein: ' + item.protein + "</h5>");
-      itemInfo.append("<h5 class='data'>"+ 'Total Fat: ' + item.totalFat + "</h5>");
-      itemInfo.append("<h5 class='data'>" + 'Carbs: '+  item.carbohydrates + "</h5>");
+      itemInfo.append("<h5 class='data'>" + 'Protein: ' + item.protein + 'g' + "</h5>");
+      itemInfo.append("<h5 class='data'>"+ 'Total Fat: ' + item.totalFat + 'g' + "</h5>");
+      itemInfo.append("<h5 class='data'>" + 'Carbs: '+  item.carbohydrates + 'g' + "</h5>");
       itemInfo.append("<button class = 'addItem' type = 'button'>Add to Meal</button>");
     return(html);
   },
