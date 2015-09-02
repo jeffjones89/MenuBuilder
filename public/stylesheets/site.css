@@ -149,7 +149,10 @@ box-shadow: 0 0 5px #888;
   margin-left: 23%;
 }
 
-
+#total-buttons button {
+  margin-left: 23%;
+  margin-bottom: 4%;
+}
 
 .addItem{
   margin-bottom: 3%;
@@ -250,6 +253,6 @@ box-shadow: 0 0 5px #888;
   }
 }
 
-/*@media (max-width: 750px) {
+@media (max-width: 750px) {
 
-}*/
+}
