@@ -149,6 +149,8 @@ box-shadow: 0 0 5px #888;
   margin-left: 23%;
 }
 
+
+
 .addItem{
   margin-bottom: 3%;
 }
@@ -226,6 +228,7 @@ box-shadow: 0 0 5px #888;
   display: flex;
   justify-content: center;
   align-items: baseline;
+  -webkit-align-items: baseline;
   background-color: #e7f3f2;
   opacity: .9;
   padding: 2%;
