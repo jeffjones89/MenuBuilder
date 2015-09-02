@@ -7,33 +7,6 @@ body {
   color: #474747;
 }
 
-#masthead {
-  font-size: 2em;
-  font-weight: bold;
-  text-align: center;
-  border-bottom: 2%;
-  font-family: 'Lato', sans-serif;
-}
-
-#search {
-  margin: 0 auto;
-  text-align: center;
-}
-
-input[type="search"] {
-  padding: 10px;
-  text-align: left;
-  min-width: 250px;
-  width: 25%;
-  border: solid 1px #fff;
-  box-shadow: inset 1px 1px 2px 0 #707070;
-  transition: box-shadow 0.3s;
-}
-
-input[type="search"]:focus {
-  box-shadow: inset 1px 1px 2px 0 #c9c9c9;
-}
-
 button {
   text-align: center;
   min-width: 90px;
@@ -54,6 +27,130 @@ button {
 button:hover {
   opacity: .8;
   cursor: pointer;
+}
+
+input[type="search"] {
+  padding: 10px;
+  text-align: left;
+  min-width: 250px;
+  width: 25%;
+  border: solid 1px #fff;
+  box-shadow: inset 1px 1px 2px 0 #707070;
+  transition: box-shadow 0.3s;
+}
+
+input[type="search"]:focus {
+  box-shadow: inset 1px 1px 2px 0 #c9c9c9;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
+}
+
+#clear-meal {
+  margin-left: 35%;
+}
+
+#flash{
+  display: none;
+  text-align: center;
+  font-size: .9em;
+  width: 80%;
+  margin: 0 auto;
+  color: #474747;
+  font-weight: bold;
+  padding: 2px;
+  background-color: white;
+  opacity: .8;
+  font-size: 20px;
+}
+
+#main {
+ background: url(../images/tea.jpg) no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+width: 100%;
+height: 100%;
+moz-box-shadow: 0 0 5px #888;
+-webkit-box-shadow: 0 0 5px#888;
+box-shadow: 0 0 5px #888;
+}
+
+#masthead {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 2%;
+  font-family: 'Lato', sans-serif;
+}
+
+#meal {
+  width: 30%;
+  height: 20%;
+  float: left;
+  margin-left: 4%;
+}
+
+#mealName {
+  margin-left: 23%;
+  padding: 8px;
+  border: solid 1px #dcdcdc;
+  transition: box-shadow 0.3s, border 0.3s;
+}
+
+#menu {
+  text-align: center;
+  width: 40%;
+  height: 20%;
+  float: left;
+  overflow-y: auto;
+  max-height: 500px;
+  cursor: pointer;
+}
+
+#menuHeader, #mealHeader, #totalHeader {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.4em;
+  padding-bottom: 2px;
+  border-bottom-style: solid;
+  border-bottom: 1px solid #a3a3a3;
+}
+
+#save-meal {
+  margin-left: 35%;
+}
+
+#search {
+  margin: 0 auto;
+  text-align: center;
+}
+
+#total {
+  width: 30%;
+  height: 20%;
+  text-align: left;
+  margin-left: 5%;
+  padding: 2px;
+  max-width: 60%;
+}
+
+#total p {
+  margin-left: 23%;
+}
+
+.addItem{
+  margin-bottom: 3%;
 }
 
 .button1 {
@@ -78,17 +175,13 @@ button:hover {
   cursor: pointer;
 }
 
-#main {
- background: url(../images/tea.jpg) no-repeat center center fixed;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
-width: 100%;
-height: 100%;
-moz-box-shadow: 0 0 5px #888;
--webkit-box-shadow: 0 0 5px#888;
-box-shadow: 0 0 5px #888;
+.data {
+  text-align: left;
+  margin-left: 15%;
+  padding: 1%;
+  background: white;
+  margin-right: 6%;
+  max-width: 100%;
 }
 
 .header {
@@ -120,19 +213,6 @@ box-shadow: 0 0 5px #888;
   color: #a3a3a3;
 }
 
-.data {
-  text-align: left;
-  margin-left: 15%;
-  padding: 1%;
-  background: white;
-  margin-right: 6%;
-  max-width: 100%;
-}
-
-.addItem{
-  margin-bottom: 3%;
-}
-
 .main-content {
   width: 80%;
   height: 100%;
@@ -152,87 +232,11 @@ box-shadow: 0 0 5px #888;
   margin-bottom: 50px;
 }
 
-#menu {
-  text-align: center;
-  width: 40%;
-  height: 20%;
-  float: left;
-  overflow-y: auto;
-  max-height: 500px;
-  cursor: pointer;
-}
-
-::-webkit-scrollbar {
-    width: 10px;
-}
-::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
-    border-radius: 10px;
-}
-::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
-}
-
-#meal {
-  width: 30%;
-  height: 20%;
-  float: left;
-  margin-left: 4%;
-}
-
-#clear-meal {
-  margin-left: 35%;
-}
-
-#total {
-  width: 30%;
-  height: 20%;
-  text-align: left;
-  margin-left: 5%;
-  padding: 2px;
-  max-width: 60%;
-}
-
-#total p {
-  margin-left: 23%;
-}
-
-#mealName {
-  margin-left: 23%;
-  padding: 8px;
-  border: solid 1px #dcdcdc;
-  transition: box-shadow 0.3s, border 0.3s;
-}
-
-#save-meal {
-  margin-left: 35%;
-}
-
-#menuHeader, #mealHeader, #totalHeader {
-  text-align: center;
-  font-weight: bold;
-  font-size: 1.4em;
-  padding-bottom: 2px;
-  border-bottom-style: solid;
-  border-bottom: 1px solid #a3a3a3;
-}
-
-#flash{
-  display: none;
-  text-align: center;
-  font-size: .9em;
-  width: 80%;
-  margin: 0 auto;
-  color: #474747;
-  font-weight: bold;
-  padding: 2px;
-  background-color: white;
-  opacity: .8;
-  font-size: 20px;
-}
-
 @media (max-width: 850px) {
+
+  #clear-meal {
+    margin-left: 25%;
+  }
 
   #mealName {
     margin-left: 15%;
@@ -240,10 +244,6 @@ box-shadow: 0 0 5px #888;
 
   #save-meal {
     margin-left: 28%;
-  }
-
-  #clear-meal {
-    margin-left: 25%;
   }
 }
 
