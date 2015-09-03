@@ -3,7 +3,7 @@
 
 body {
   margin: 0 auto;
-  font-family: 'Pontano Sans', sans-serif;
+  font-family: 'Pontano Sans', arial, sans-serif;
   color: #474747;
 }
 
@@ -13,7 +13,7 @@ button {
   width: 10%;
   height: 20%;
   font-family: 'Pontano Sans', sans-serif;
-  font-size: .9em;
+  font-size: .8em;
   text-align: center;
   font-weight: bold;
   margin: 1%;
@@ -21,7 +21,10 @@ button {
   border: 1px solid #ab171e;
 	background-color: #ab171e;
 	border-radius: 3px;
-	background-image: -webkit-linear-gradient(#d62229, #ab171e);
+	background-image: linear-gradient(#d62229, #ab171e);
+  background-image: -webkit-linear-gradient(#d62229, #ab171e);
+  background-image: -moz-linear-gradient(#d62229, #ab171e);
+  background-image: -o-linear-gradient(#d62229, #ab171e);
 }
 
 button:hover {
@@ -29,18 +32,8 @@ button:hover {
   cursor: pointer;
 }
 
-input[type="search"] {
-  padding: 10px;
-  text-align: left;
-  min-width: 250px;
-  width: 25%;
-  border: solid 1px #fff;
-  box-shadow: inset 1px 1px 2px 0 #707070;
-  transition: box-shadow 0.3s;
-}
-
-input[type="search"]:focus {
-  box-shadow: inset 1px 1px 2px 0 #c9c9c9;
+input {
+  -webkit-appearance: none; /*this is necessary for the search form's style to appear on the page in safari*/
 }
 
 ::-webkit-scrollbar {
@@ -53,10 +46,6 @@ input[type="search"]:focus {
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
     -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
-}
-
-#clear-meal {
-  margin-left: 35%;
 }
 
 #flash{
@@ -75,15 +64,17 @@ input[type="search"]:focus {
 
 #main {
  background: url(../images/tea.jpg) no-repeat center center fixed;
+ background-size: cover;
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
 background-size: cover;
 width: 100%;
 height: 100%;
-moz-box-shadow: 0 0 5px #888;
--webkit-box-shadow: 0 0 5px#888;
 box-shadow: 0 0 5px #888;
+-moz-box-shadow: 0 0 5px #888;
+-webkit-box-shadow: 0 0 5px#888;
+-o-box-shadow: 0 0 5px#888;
 }
 
 #masthead {
@@ -102,7 +93,8 @@ box-shadow: 0 0 5px #888;
 }
 
 #mealName {
-  margin-left: 15%;
+  margin: 0 auto;
+  margin-top: 3%;
   padding: 8px;
   border: solid 1px #dcdcdc;
   transition: box-shadow 0.3s, border 0.3s;
@@ -127,8 +119,28 @@ box-shadow: 0 0 5px #888;
   border-bottom: 1px solid #a3a3a3;
 }
 
-#save-meal {
-  margin-left: 35%;
+#menu-search {
+  font-size: 10px;
+  padding: 10px;
+  text-align: left;
+  min-width: 200px;
+  width: 25%;
+  border: solid 1px #fff;
+  box-shadow: inset 1px 1px 2px 0 #707070;
+  -webkit-box-shadow: inset 1px 1px 2px 0 #707070;
+  -moz-box-shadow: inset 1px 1px 2px 0 #707070;
+  -o-box-shadow: inset 1px 1px 2px 0 #707070;
+  transition: box-shadow 0.3s;
+  -webkit-transition: box-shadow 0.3s;
+  -moz-transition: box-shadow 0.3s;
+  -o-transition: box-shadow 0.3s;
+}
+
+#menu-search:focus {
+  box-shadow: inset 1px 1px 2px 0 #c9c9c9;
+  -webkit-box-shadow: inset 1px 1px 2px 0 #c9c9c9;
+  -moz-box-shadow: inset 1px 1px 2px 0 #c9c9c9;
+  -o-box-shadow: inset 1px 1px 2px 0 #c9c9c9;
 }
 
 #search {
@@ -139,7 +151,7 @@ box-shadow: 0 0 5px #888;
 #total {
   width: 30%;
   height: 20%;
-  text-align: left;
+  text-align: center;
   margin-left: 5%;
   padding: 2px;
   max-width: 60%;
@@ -147,11 +159,11 @@ box-shadow: 0 0 5px #888;
 
 #total p {
   margin-left: 23%;
+  text-align: left;
 }
 
 #total-buttons button {
-  margin-left: 30%;
-  margin-bottom: 4%;
+  margin-bottom: 10%;
 }
 
 .addItem{
@@ -160,7 +172,7 @@ box-shadow: 0 0 5px #888;
 
 .button1 {
   text-align: center;
-  min-width: 90px;
+  min-width: 60px;
   width: 10%;
   height: 20%;
   font-family: 'Pontano Sans', sans-serif;
@@ -172,6 +184,7 @@ box-shadow: 0 0 5px #888;
   border: 1px solid #ab171e;
 	background-color: #ab171e;
 	border-radius: 3px;
+  background-image: linear-gradient(#d62229, #ab171e);
 	background-image: -webkit-linear-gradient(#d62229, #ab171e);
 }
 
@@ -183,7 +196,7 @@ box-shadow: 0 0 5px #888;
 .data {
   text-align: left;
   margin-left: 15%;
-  padding: 1%;
+  padding: 2%;
   background: white;
   margin-right: 6%;
   max-width: 100%;
@@ -221,7 +234,7 @@ box-shadow: 0 0 5px #888;
 .main-content {
   width: 80%;
   height: 100%;
-  min-height: 500px;
+  min-height: 400px;
   margin: 0 auto;
   overflow: auto;
   display: -webkit-box;
@@ -241,31 +254,69 @@ box-shadow: 0 0 5px #888;
 @media (max-width: 950px) {
 
   #mealName {
-    margin-left: 10%;
+    font-size: 8px;
+  }
+
+  #menu-search {
+    font-size: 8px;
+  }
+
+  #total p {
+    margin-left: 17%;
   }
 }
 
 @media (max-width: 850px) {
 
-  #clear-meal {
-    margin-left: 25%;
+  * {
+    font-size: 98%;
   }
 
   #mealName {
-    width: 65%;
+    font-size: 8px;
   }
 
-  #save-meal {
-    margin-left: 28%;
+  #menu-search {
+    font-size: 8px;
   }
 
-  #total-buttons button {
-    margin-left: 23%;
+  #total p {
+    margin-left: 24%;
+    text-align: left;
   }
 }
 
-@media (max-width: 750px) {
- /*style flex for columns to align vertically:
-  -webkit-flex-direction: column;
-  flex-direction: column;*/
+@media (max-width: 700px) {
+
+  * {
+    font-size: 95%;
+  }
+
+  button {
+    min-width: 75px;
+    width: 10%;
+    height: 20%;
+  }
+
+  #masthead {
+    font-size: 1.5em;
+  }
+
+  #mealName {
+    font-size: 6px;
+  }
+
+  #menu-search {
+    font-size: 8px;
+  }
+
+  #total p {
+    margin-left: 13%;
+    text-align: left;
+  }
+
+  .main-content {
+    width: 90%;
+    margin-bottom: 0;
+  }
 }
