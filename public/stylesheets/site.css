@@ -253,6 +253,10 @@ box-shadow: 0 0 5px #888;
 
 @media (max-width: 950px) {
 
+  #flash{
+    font-size: 16px;
+  }
+
   #mealName {
     font-size: 8px;
   }
@@ -296,6 +300,10 @@ box-shadow: 0 0 5px #888;
     min-width: 75px;
     width: 10%;
     height: 20%;
+  }
+
+  #flash{
+    font-size: 12px;
   }
 
   #masthead {
