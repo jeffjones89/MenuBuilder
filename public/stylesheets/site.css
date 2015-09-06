@@ -216,9 +216,10 @@ box-shadow: 0 0 5px #888;
   background: -webkit-linear-gradient(white 0%, white 55%, #e6e6e6 130%);
   background: -o-linear-gradient(white 0%, white 55%, #e6e6e6 130%);
   background: linear-gradient(white 0%, white 55%, #e6e6e6 130%);
-  moz-box-shadow: 0 0 5px #888;
-  -webkit-box-shadow: 0 0 5px#888;
   box-shadow: 0 0 5px #888;
+  -webkit-box-shadow: 0 0 5px #888;
+  -moz-box-shadow: 0 0 5px #888;
+  -o-box-shadow: 0 0 5px #888;
 }
 
 .itemInfo {
@@ -243,14 +244,16 @@ box-shadow: 0 0 5px #888;
   min-height: 400px;
   margin: 0 auto;
   overflow: auto;
-  display: -webkit-box;
+  display: flex;
+  display: -webkit-box; /*webkit should also cover opera for flexbox*/
+  display: -webkit-flex;
   display: -moz-box;
   display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
   justify-content: center;
   align-items: baseline;
   -webkit-align-items: baseline;
+  -moz-align-items: baseline;
+  -o-align-items: baseline;
   background-color: #e7f3f2;
   opacity: .9;
   padding: 2%;
