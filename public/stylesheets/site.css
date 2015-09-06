@@ -1,6 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito:400,300,700|Pontano+Sans);
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700);
 
+* {
+  -webkit-font-smoothing: antialiased;
+}
+
 body {
   margin: 0 auto;
   font-family: 'Pontano Sans', arial, sans-serif;
