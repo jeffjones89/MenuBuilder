@@ -153,7 +153,7 @@ box-shadow: 0 0 5px #888;
 }
 
 #total {
-  width: 30%;
+  width: 45%;
   height: 20%;
   text-align: center;
   margin-left: 5%;
@@ -161,8 +161,10 @@ box-shadow: 0 0 5px #888;
   max-width: 60%;
 }
 
-#total p {
-  margin-left: 23%;
+#total-items {
+  margin: 0 auto;
+  width: 50%;
+  height: 50%;
   text-align: left;
 }
 
@@ -200,7 +202,7 @@ box-shadow: 0 0 5px #888;
 .data {
   text-align: left;
   margin-left: 15%;
-  padding: 2%;
+  padding: 3%;
   background: white;
   margin-right: 6%;
   max-width: 100%;
@@ -269,8 +271,8 @@ box-shadow: 0 0 5px #888;
     font-size: 8px;
   }
 
-  #total p {
-    margin-left: 17%;
+  #total-items {
+    width: 60%;
   }
 }
 
@@ -278,19 +280,6 @@ box-shadow: 0 0 5px #888;
 
   * {
     font-size: 98%;
-  }
-
-  #mealName {
-    font-size: 8px;
-  }
-
-  #menu-search {
-    font-size: 8px;
-  }
-
-  #total p {
-    margin-left: 24%;
-    text-align: left;
   }
 }
 
@@ -316,15 +305,6 @@ box-shadow: 0 0 5px #888;
 
   #mealName {
     font-size: 6px;
-  }
-
-  #menu-search {
-    font-size: 8px;
-  }
-
-  #total p {
-    margin-left: 13%;
-    text-align: left;
   }
 
   .main-content {
