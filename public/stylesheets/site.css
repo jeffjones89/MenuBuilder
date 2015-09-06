@@ -245,9 +245,8 @@ box-shadow: 0 0 5px #888;
   margin: 0 auto;
   overflow: auto;
   display: flex;
-  display: -webkit-box; /*webkit should also cover opera for flexbox*/
-  display: -webkit-flex;
-  display: -moz-box;
+  display: -webkit-box; /* webkit should also cover opera for flexbox */
+  display: -webkit-flex; /* -moz- prefix breaks flexbox display in firefox */
   display: -ms-flexbox;
   justify-content: center;
   align-items: baseline;
