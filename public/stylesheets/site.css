@@ -9,6 +9,8 @@ body {
   margin: 0 auto;
   font-family: 'Pontano Sans', arial, sans-serif;
   color: #474747;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 
 button {
@@ -112,6 +114,7 @@ box-shadow: 0 0 5px #888;
   overflow-y: auto;
   max-height: 500px;
   cursor: pointer;
+  padding-right: 10px;
 }
 
 #menuHeader, #mealHeader, #totalHeader {
@@ -125,7 +128,7 @@ box-shadow: 0 0 5px #888;
 
 #menu-search {
   font-size: 10px;
-  padding: 10px 2px 10px 2px;
+  padding: 10px 2px 10px 5px;
   text-align: left;
   min-width: 200px;
   width: 25%;
